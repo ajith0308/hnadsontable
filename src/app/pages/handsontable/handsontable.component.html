@@ -1,0 +1,18 @@
+<hot-table
+  [settings]="settings"
+  [data]="tableNameData"
+  [afterSelection]="getCellLocation"
+  #handsontabel
+  [rowHeaders]="true"
+  [width]="600"
+  [height]="300"
+  [licenseKey]="licenseKey"
+>
+<!-- [colHeaders]="colHeaders" -->
+  <!-- <hot-column data="make" title="Make"></hot-column>
+      <hot-column data="model" title="Model"></hot-column>
+      [afterSelection]="getCellLocation"
+      <hot-column *ngFor="let val of years; let i = index" data="{{ 'year' + (i + 1) }}" [width]="50" [title]="val"></hot-column> -->
+</hot-table>
+<button (click)="update(hotTable)">Update Cell</button>
+<!-- <button (click)="getCellLocation(hotTable)">Get Cell Location</button> -->
